@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container mt-4">
+        <div class="display-6">
+            <h3>Deletar Marca</h3>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <p class="cart-text">
+                    Tem certeza que deseja excluir a marca <strong>{{ object.name }}?</strong>
+                </p>
+                <form method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">Deletar</button>
+                </form>
+                <a href="{% url 'brand_list' %}" class="btn btn-secondary mt-3">Cancelar e voltar pra lista de Marcas</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
