@@ -54,7 +54,7 @@ See below some screenshots of the SGE system in action:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-user/sge.git
+    git clone https://github.com/Janfrancisco/sge.git
     cd sge
     ```
 
